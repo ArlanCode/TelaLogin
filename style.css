@@ -183,8 +183,8 @@ body {
   }
 
   .right-section {
-    height: 50vh;
-    width: 90%;
+    height: auto;
+    width: 80%;
     background: white;
     border-radius: 50px;
   }
@@ -192,35 +192,25 @@ body {
   .welcome {
     align-self: center;
     border-radius: 0px 0px 30px 30px;
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 20px 0px;
     padding: 12px 20px;
     font-size: 14px;
   }
 
   .btn-login {
-    margin: 20px 0px 40px 0px;
+    margin: 10px 0px 40px 0px;
   }
 
   .create-account {
     font-size: 14px;
+    margin-bottom: 40px;
   }
   .forgot-password {
     font-size: 13px;
+    margin-bottom: 5px;
   }
 
   .arlan-code {
-    margin-bottom: 20px;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .right-section {
-    height: 45vh;
-  }
-  .btn-login {
-    margin: 15px 0px 25px 0px;
-  }
-  .create-account {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 }
