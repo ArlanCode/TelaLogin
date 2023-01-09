@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&family=Roboto:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    #500d8e,
+    #5c0e9b,
+    #680fa7,
+    #750fb4,
+    #820fc0
+  );
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) -10px 10px 20px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+  width: 55vh;
+  background-image: linear-gradient(
+    to right,
+    #5f13a4,
+    #6d12ba,
+    #7c10d1,
+    #8b0ae8,
+    #9b00ff
+  );
+  z-index: 1;
+  border-radius: 50px 0px 0px 50px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 7px 0px 2px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.img-login {
+  height: 80%;
+  width: 80%;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  height: 55vh;
+  width: 35vh;
+  background: white;
+  border-radius: 0px 50px 50px 0px;
+  color: #581889;
+}
+
+.welcome {
+  align-self: flex-start;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #5f13a4,
+    #6d12ba,
+    #7c10d1,
+    #8b0ae8,
+    #9b00ff
+  );
+  border-radius: 0px 30px 30px 0px;
+  margin: 20px 0px 50px 0px;
+  padding: 15px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) -1.5px 1.5px 3px;
+  color: white;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.login {
+  padding-left: 30px;
+  font-weight: 800;
+}
+.usuario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.campo-entrada {
+  width: 70%;
+  border: none;
+  padding-bottom: 12px;
+  border-bottom: 1px solid black;
+}
+
+.btn-login {
+  margin: 20px 0px 50px 0px;
+  padding: 6px 12px;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    to right,
+    #5f13a4,
+    #6d12ba,
+    #7c10d1,
+    #8b0ae8,
+    #9b00ff
+  );
+  box-shadow: rgba(0, 0, 0, 0.24) -1.5px 1.5px 3px;
+  border: none;
+  color: white;
+  font-weight: 800;
+}
+
+.btn-login:hover {
+  background: #410f70;
+  cursor: pointer;
+}
+
+.create-account {
+  align-self: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+.forgot-password {
+  align-self: center;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 2px solid rgb(73, 9, 121);
+}
+
+.arlan-code {
+  margin-top: 40px;
+  color: white;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 800px) {
+  .left-section {
+    width: 45vh;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .container {
+    flex-direction: column-reverse;
+    height: 120vh;
+    border-radius: 0px;
+    box-shadow: none;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .left-section {
+    height: 30vh;
+    width: 100%;
+    border-radius: 0%;
+    background: none;
+    box-shadow: none;
+    font-size: 13px;
+    padding: 0px 15px 0px 15px;
+  }
+
+  .img-login {
+    height: 100%;
+    width: 100%;
+  }
+
+  .right-section {
+    height: 50vh;
+    width: 90%;
+    background: white;
+    border-radius: 50px;
+  }
+
+  .welcome {
+    align-self: center;
+    border-radius: 0px 0px 30px 30px;
+    margin: 0px 0px 30px 0px;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .btn-login {
+    margin: 20px 0px 40px 0px;
+  }
+
+  .create-account {
+    font-size: 14px;
+  }
+  .forgot-password {
+    font-size: 13px;
+  }
+
+  .arlan-code {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .right-section {
+    height: 45vh;
+  }
+  .btn-login {
+    margin: 15px 0px 25px 0px;
+  }
+  .create-account {
+    margin-bottom: 50px;
+  }
+}
